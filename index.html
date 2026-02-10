@@ -3,29 +3,21 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="color-scheme" content="dark" />
-  <meta name="description" content="DONKEY — the most stubborn, most iconic animal meme in the world. Kick memecoins higher." />
-
   <title>DONKEY</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <!-- Font: clean + bold, professional -->
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+  <meta name="description" content="DONKEY — the most stubborn, most iconic animal meme. Kick Memecoins Higher." />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <a class="skip" href="#home">Skip to content</a>
+  <!-- Always-on film/grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
 
-  <!-- Top Nav -->
+  <!-- Sticky Top Bar -->
   <header class="topbar" role="banner">
-    <div class="container topbar__inner">
-      <a class="brand" href="#home" aria-label="DONKEY Home">
+    <div class="topbar__inner">
+      <a class="brand" href="#home" aria-label="DONKEY home">
         <span class="brand__mark" aria-hidden="true">D</span>
-        <span class="brand__word">DONKEY</span>
+        <span class="brand__text">DONKEY</span>
       </a>
 
       <nav class="nav" aria-label="Primary navigation">
@@ -37,270 +29,293 @@
       </nav>
 
       <div class="topbar__cta">
-        <a class="btn btn--ghost" href="#how">buy now</a>
+        <a class="btn btn--pill" href="#how">buy now</a>
       </div>
     </div>
   </header>
 
-  <main id="home" class="page" role="main">
-    <!-- HERO -->
-    <section class="section hero" aria-label="Hero section">
-      <div class="container hero__grid">
-        <div class="hero__copy">
-          <p class="eyebrow">The most stubborn, most iconic animal meme.</p>
-          <h1 class="headline">DONKEY</h1>
+  <!-- HERO -->
+  <main class="page" id="home">
+    <section class="section hero">
+      <div class="wrap">
+        <div class="hero__grid">
+          <div class="hero__copy">
+            <div class="chip">Are we there yet?</div>
+            <h1 class="title">DONKEY</h1>
 
-          <p class="lead">
-            Dogs and frogs have had their day.<br />
-            Now Donkey kicks ’em to the curb.
-          </p>
+            <p class="kicker">
+              The most stubborn, most iconic animal meme.
+            </p>
 
-          <div class="hero__actions">
-            <a class="btn" href="#how">How to Buy</a>
-            <a class="btn btn--ghost" href="#about">Read the Lore</a>
-          </div>
+            <p class="lead">
+              Dogs and frogs have had their day.
+              <br />
+              Now Donkey kicks ’em to the curb.
+            </p>
 
-          <div class="chips" aria-label="Identity chips">
-            <span class="chip">stubborn</span>
-            <span class="chip">iconic</span>
-            <span class="chip">memeable</span>
-            <span class="chip">unbothered</span>
-          </div>
+            <p class="tagline"><em>Kick Memecoins Higher.</em></p>
 
-          <div class="social" aria-label="Social links">
-            <!-- Replace # with your real links -->
-            <a class="iconbtn" href="#" aria-label="X / Twitter">
-              <span aria-hidden="true">𝕏</span>
-            </a>
-            <a class="iconbtn" href="#" aria-label="Telegram">
-              <span aria-hidden="true">✈</span>
-            </a>
-            <a class="iconbtn" href="#" aria-label="Dexscreener">
-              <span aria-hidden="true">📈</span>
-            </a>
-            <a class="iconbtn" href="#" aria-label="Pump.fun">
-              <span aria-hidden="true">⛽</span>
-            </a>
-          </div>
-        </div>
-
-        <div class="hero__art" aria-label="Hero art">
-          <div class="frame frame--hero">
-            <img class="media" src="assets/donkey2.png" alt="Donkey close-up" loading="lazy" />
-          </div>
-
-          <!-- Accent GIFs (keep it minimal) -->
-          <div class="float float--a">
-            <img class="float__media" src="assets/donkey3.gif" alt="Donkey GIF accent" loading="lazy" />
-          </div>
-          <div class="float float--b">
-            <img class="float__media" src="assets/donkey4.gif" alt="Donkey GIF accent" loading="lazy" />
-          </div>
-        </div>
-      </div>
-
-      <div class="section__edge" aria-hidden="true"></div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section" aria-label="About section">
-      <div class="container section__grid section__grid--about">
-        <div class="panel panel--media">
-          <div class="frame frame--about">
-            <img class="media" src="assets/donkey-kick.png" alt="Donkey kicks the old meme cycle to the curb" loading="lazy" />
-          </div>
-
-          <div class="mini media-strip" aria-label="Extra visuals">
-            <img class="mini__img" src="assets/donkey1.png" alt="Donkey grayscale" loading="lazy" />
-            <img class="mini__img" src="assets/donkey5.gif" alt="Donkey GIF" loading="lazy" />
-          </div>
-        </div>
-
-        <div class="panel panel--copy">
-          <h2 class="sectiontitle">about</h2>
-
-          <p class="body">
-            Donkey is tired of watching everyone chase the same recycled frog and dog coins.
-            The frogs and the dogs have had their day. It’s time for the most stubborn, most iconic
-            animal meme in the world to take his rightful place as king of memecoins.
-          </p>
-
-          <p class="body">
-            Donkey is here to make memecoins great again.
-          </p>
-
-          <div class="callout">
-            <div class="callout__title">Kick Memecoins Higher.</div>
-            <div class="callout__desc">
-              Built to feel human. Designed to endure. Simple on purpose — sharp by design.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="section__edge" aria-hidden="true"></div>
-    </section>
-
-    <!-- HOW TO BUY -->
-    <section id="how" class="section" aria-label="How to buy section">
-      <div class="container">
-        <h2 class="sectiontitle center">how to buy</h2>
-
-        <div class="cards">
-          <article class="card">
-            <div class="card__icon" aria-hidden="true">①</div>
-            <div>
-              <h3 class="card__title">create a wallet</h3>
-              <p class="card__text">
-                Install a wallet (Phantom recommended for Solana). Set it up, save your seed phrase offline,
-                and you’re ready to move.
-              </p>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card__icon" aria-hidden="true">②</div>
-            <div>
-              <h3 class="card__title">get some SOL</h3>
-              <p class="card__text">
-                Buy SOL from an exchange and send it to your wallet address. Keep a little extra SOL for fees.
-              </p>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card__icon" aria-hidden="true">③</div>
-            <div>
-              <h3 class="card__title">swap on pump.fun</h3>
-              <p class="card__text">
-                Find DONKEY on pump.fun, confirm the ticker/contract, and swap. Double-check everything before you click.
-              </p>
-            </div>
-          </article>
-        </div>
-
-        <div class="note">
-          <div class="note__title">Are we there yet?</div>
-          <p class="note__text">
-            Ask not what memecoins can do for you. Ask how far the donkey can carry you.
-          </p>
-        </div>
-      </div>
-
-      <div class="section__edge" aria-hidden="true"></div>
-    </section>
-
-    <!-- TOKENOMICS -->
-    <section id="tokenomics" class="section" aria-label="Tokenomics section">
-      <div class="container tokenomics">
-        <h2 class="sectiontitle center">tokenomics</h2>
-
-        <div class="tokenomics__grid">
-          <div class="tokenomics__left">
-            <div class="stat">
-              <div class="stat__label">token supply</div>
-              <div class="stat__value">No Taxes, No Bullshit. It’s that simple.</div>
+            <div class="hero__actions">
+              <a class="btn" href="#how">How to Buy</a>
+              <a class="btn btn--ghost" href="#tokenomics">Tokenomics</a>
             </div>
 
-            <div class="panel panel--dark">
-              <p class="body">
-                Fair launch on pump.fun—bonding curve guarantees transparency, liquidity, and zero rug risk.
-                Community owned from the start.
-              </p>
-            </div>
-
-            <div class="panel panel--dark subtle">
-              <p class="tiny">
-                (Replace this line later with: CA / ticker / chain details once you have them.)
-              </p>
-            </div>
-          </div>
-
-          <div class="tokenomics__right">
-            <div class="ring">
-              <div class="ring__inner">
-                <img class="ring__img" src="assets/donkey2.png" alt="Donkey tokenomics emblem" loading="lazy" />
+            <div class="meta">
+              <div class="meta__item">
+                <span class="meta__k">Ticker</span>
+                <span class="meta__v">$DONKEY</span>
+              </div>
+              <div class="meta__item">
+                <span class="meta__k">Chain</span>
+                <span class="meta__v">TBD</span>
+              </div>
+              <div class="meta__item">
+                <span class="meta__k">Vibe</span>
+                <span class="meta__v">Stubborn</span>
               </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <div class="section__edge" aria-hidden="true"></div>
+          <div class="artcard">
+            <div class="artcard__top">
+              <span class="artcard__badge">HERO</span>
+              <span class="artcard__hint">cinematic stare</span>
+            </div>
+
+            <img class="hero__img" src="assets/donkey2.png" alt="DONKEY hero" />
+
+            <div class="artcard__sub">
+              Ask not what memecoins can do for you — ask how far the donkey can carry you.
+            </div>
+          </div>
+        </div>
+
+        <div class="tear" aria-hidden="true"></div>
+      </div>
     </section>
 
-    <!-- ROADMAP -->
-    <section id="roadmap" class="section" aria-label="Roadmap section">
-      <div class="container">
-        <h2 class="sectiontitle center">roadmap</h2>
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="about-watermark" aria-hidden="true"></div>
+      <div class="wrap">
+        <h2 class="h2 center">about</h2>
 
-        <div class="roadmap">
-          <div class="roadmap__side">
-            <img class="roadmap__img" src="assets/donkey1.png" alt="Donkey side visual" loading="lazy" />
-          </div>
+        <div class="split">
+          <div class="panel">
+            <h3>Not a hero. Not a savior. A donkey.</h3>
+            <p>
+              In meme history, the dogs ran. The frogs ruled. Then came the stubborn one:
+              the animal that refuses to quit, refuses to sell, and refuses to look impressed.
+            </p>
+            <p>
+              DONKEY is a tribute to internet persistence — the kind of energy that keeps walking
+              even when everyone else is busy arguing about charts.
+            </p>
 
-          <div class="roadmap__core">
-            <div class="panel panel--dark roadmap__panel">
-              <ul class="steps" aria-label="Roadmap phases">
-                <li class="steps__item"><span class="steps__dot" aria-hidden="true"></span><strong>Phase 1:</strong> Kick Off</li>
-                <li class="steps__item"><span class="steps__dot" aria-hidden="true"></span><strong>Phase 2:</strong> Stubborn HODL</li>
-                <li class="steps__item"><span class="steps__dot" aria-hidden="true"></span><strong>Phase 3:</strong> Donkey Dominance</li>
-              </ul>
+            <div class="quote">
+              <span class="quote__mark">“</span>
+              <p class="quote__text">
+                Just a meme. No promises. No guarantees.
+              </p>
+              <span class="quote__mark quote__mark--end">”</span>
             </div>
           </div>
 
-          <div class="roadmap__side roadmap__side--right">
-            <img class="roadmap__img" src="assets/donkey4.gif" alt="Donkey reaction gif" loading="lazy" />
+          <div class="panel panel--glass">
+            <div class="badgeRow">
+              <span class="badge">stubborn</span>
+              <span class="badge">iconic</span>
+              <span class="badge">memeable</span>
+              <span class="badge">unbothered</span>
+            </div>
+
+            <div class="callout">
+              <h4>Core idea</h4>
+              <p>
+                A meme token launch page that feels “hand-made”, but engineered.
+                Clean sections, consistent rhythm, and room for your future edits.
+              </p>
+            </div>
+
+            <div class="divider"></div>
+
+            <p class="fine">
+              Tip: keep most images static. Use 1–2 GIFs max as accent.
+            </p>
           </div>
         </div>
-      </div>
 
-      <div class="section__edge" aria-hidden="true"></div>
+        <div class="tear tear--thin" aria-hidden="true"></div>
+      </div>
     </section>
 
-    <!-- FOOTER / DISCLAIMER -->
-    <footer class="footer" aria-label="Footer">
-      <div class="container footer__inner">
-        <div class="footer__brand">
-          <span class="brand__mark" aria-hidden="true">D</span>
-          <div>
-            <div class="footer__title">DONKEY</div>
-            <div class="footer__sub">Kick Memecoins Higher.</div>
+    <!-- HOW TO BUY -->
+    <section class="section" id="how">
+      <div class="wrap">
+        <h2 class="h2 center">how to buy</h2>
+
+        <div class="how-sticker" aria-hidden="true">
+          <img src="assets/donkey3.gif" alt="Donkey reaction gif" />
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card__head">
+              <div class="card__icon">1</div>
+              <h3 class="card__title">Create a wallet</h3>
+            </div>
+            <p class="card__text">
+              Install a wallet you trust. Desktop or mobile — keep your seed phrase offline.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card__head">
+              <div class="card__icon">2</div>
+              <h3 class="card__title">Get gas</h3>
+            </div>
+            <p class="card__text">
+              Fund your wallet with the chain’s native token for fees. No gas, no ride.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card__head">
+              <div class="card__icon">3</div>
+              <h3 class="card__title">Swap for DONKEY</h3>
+            </div>
+            <p class="card__text">
+              Use a DEX to swap. Verify the contract address carefully before you click confirm.
+            </p>
+          </article>
+        </div>
+
+        <div class="notice">
+          <strong>Reminder:</strong> This is meme territory. Double-check links and addresses.
+        </div>
+
+        <div class="tear tear--thin" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- TOKENOMICS -->
+    <section class="section" id="tokenomics">
+      <div class="wrap">
+        <h2 class="h2 center">tokenomics</h2>
+
+        <div class="tokenGrid">
+          <div class="panel panel--glass">
+            <h3 class="panel__title">Token supply</h3>
+            <div class="bigNumber">TBD</div>
+            <p class="muted">
+              Update supply, chain, taxes, LP notes, and any renounce/burn claims once final.
+            </p>
+          </div>
+
+          <div class="panel">
+            <h3 class="panel__title">Rules of the road</h3>
+            <ul class="list">
+              <li><span class="dot"></span> Keep it simple.</li>
+              <li><span class="dot"></span> Prefer clarity over hype.</li>
+              <li><span class="dot"></span> The meme does the marketing.</li>
+              <li><span class="dot"></span> The donkey does the carrying.</li>
+            </ul>
+
+            <div class="miniCard">
+              <p><strong>Note:</strong> Replace “TBD” with your final token details.</p>
+            </div>
           </div>
         </div>
 
-        <div class="footer__links" aria-label="Footer links">
-          <a href="#home">home</a>
-          <a href="#about">about</a>
-          <a href="#how">how to buy</a>
-          <a href="#tokenomics">tokenomics</a>
-          <a href="#roadmap">roadmap</a>
+        <div class="tear tear--thin" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section class="section" id="roadmap">
+      <div class="wrap">
+        <h2 class="h2 center">roadmap</h2>
+
+        <div class="road-stage">
+          <div class="road-gif">
+            <img src="assets/donkey4.gif" alt="Nope gif" />
+          </div>
+
+          <div class="panel panel--glass center">
+            <div class="road">
+              <div class="road__item">
+                <span class="road__phase">Phase 1</span>
+                <span class="road__text">Meme</span>
+              </div>
+              <div class="road__item">
+                <span class="road__phase">Phase 2</span>
+                <span class="road__text">Vibe & HODL</span>
+              </div>
+              <div class="road__item">
+                <span class="road__phase">Phase 3</span>
+                <span class="road__text">Meme Takeover</span>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <p class="fine">
+              Dogs and frogs have had their day — now the donkey follows, stubbornly, and keeps going.
+            </p>
+          </div>
+
+          <div class="road-gif">
+            <img src="assets/donkey5.gif" alt="So what's up gif" />
+          </div>
         </div>
 
-        <div class="footer__disclaimer">
-          <div class="footer__disclaimerTitle">DISCLAIMER:</div>
-          <p class="footer__disclaimerText">
-            DONKEY is a meme coin with no intrinsic value or expectation of financial return. There is no formal team
-            or roadmap. The coin is completely useless and for entertainment purposes only. It’s just a donkey.
-          </p>
-        </div>
+        <footer class="footer">
+          <div class="footer__bar">
+            <div class="footer__left">
+              <span class="footer__logo">DONKEY</span>
+              <span class="footer__sep">•</span>
+              <span class="footer__fine">Just a meme. No promises. No guarantees.</span>
+            </div>
+
+            <div class="footer__right">
+              <a class="pill" href="#home">top</a>
+              <a class="pill" href="#how">buy</a>
+              <a class="pill" href="#tokenomics">details</a>
+            </div>
+          </div>
+        </footer>
       </div>
-    </footer>
+    </section>
   </main>
 
   <script>
-    // Smooth scroll fallback (keeps it clean on older browsers)
+    // Smooth scrolling (polite & minimal)
     document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener("click", (e) => {
-        const id = a.getAttribute("href");
-        if (!id || id === "#") return;
+      a.addEventListener('click', (e) => {
+        const id = a.getAttribute('href');
         const el = document.querySelector(id);
         if (!el) return;
         e.preventDefault();
-        el.scrollIntoView({ behavior: "smooth", block: "start" });
-        history.pushState(null, "", id);
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
       });
     });
+
+    // Active nav highlight
+    const links = [...document.querySelectorAll('.nav__link')];
+    const sections = links
+      .map(l => document.querySelector(l.getAttribute('href')))
+      .filter(Boolean);
+
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        links.forEach(l => l.classList.remove('is-active'));
+        const active = links.find(l => l.getAttribute('href') === '#' + entry.target.id);
+        if (active) active.classList.add('is-active');
+      });
+    }, { rootMargin: "-45% 0px -45% 0px", threshold: 0.01 });
+
+    sections.forEach(s => obs.observe(s));
   </script>
 </body>
 </html>
